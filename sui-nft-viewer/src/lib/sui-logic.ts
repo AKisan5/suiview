@@ -1,7 +1,7 @@
-import { getSuiClient } from "@mysten/sui/client";
+import { SuiClient } from "@mysten/sui/client";
 
-// Initialize the Sui Client
-const suiClient = getSuiClient({
+// Initialize the Sui Client using the new constructor
+const suiClient = new SuiClient({
   url: "https://fullnode.mainnet.sui.io",
 });
 
